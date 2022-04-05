@@ -1,0 +1,102 @@
+body,html
+{
+   padding: 0;
+   margin: 0;
+}
+.header{
+   background-image: url('images/header-bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+   background-color: rgba(0, 0, 0, 0.8);
+   max-height: 100vh;
+}
+.head-title{
+   padding: 15%;
+   color: white;
+}
+.head-title p{
+   letter-spacing: 0.2rem;
+}
+.head-title-heading{
+   max-width: 69%;
+   font-weight: 600;
+   font-size: 57px;
+   line-height: 60px;
+}
+.head-title-button{
+   color: white;
+   background-color: red;
+   border: none;
+   padding: 1% 2%;
+   margin-top: 3%;
+}
+.head-foreground-img{
+   position: absolute;
+   top: 27.89%;
+   left: 59%;
+}
+.navbar{
+   width: 100%;
+   padding: 0%;
+}
+.nav-layout
+{
+   display: flex;
+   flex-direction: column;
+   min-width: 100%;
+}
+.nav-bar-logo{
+   width: 128px;
+   height: 128px;
+   left: 15%;
+   position: absolute;
+   top: 0%;
+}
+.nav-link{
+   color: white !important;
+   padding: 2.1% 0%;
+}
+#nav-active-tab
+{
+border-bottom: 4px solid red;
+
+}
+.navbar-menu{
+   background-color: rgba(255,255,255, 0.3);
+   color: white !important;
+   min-width: 100%;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 0% 15%;
+}
+.nav-item{
+   margin-right: 20px !important;
+}
+.contact-flex,.contact-sub-flex{
+   display: flex;
+   flex-direction: row;
+}
+.contact-flex {
+   background-color: black;
+   min-width: 100%;
+   justify-content: space-between;
+   padding: 0% 15%;
+   padding-left: 24%;
+   min-height: 50px;
+   align-items: center;
+}
+.contact-red{
+   color: red;
+   padding-right: 15px;
+}
+.fa-twitter
+{
+   color: red;
+}
+.card-body{
+   padding: 0%;
+}
+.card-img{
+   min-height: 250px;
+}
