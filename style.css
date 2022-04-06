@@ -95,8 +95,114 @@ border-bottom: 4px solid red;
    color: red;
 }
 .card-body{
-   padding: 0%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.card-body p{
+   max-width: 80%;
+}
+.card{
+   background-color: transparent;
+   border: none;
+   color: white;
+   min-height: 100%;
+   min-width: 100%;
 }
 .card-img{
    min-height: 250px;
 }
+.family-law{
+   background-image: url('images/family-law-bg.jpg');
+}
+.business-law{
+   background-image: url('images/bussiness-law-bg.jpg');
+}
+.criminal-law{
+   background-image: url('images/criminal-law-bg.jpg');
+}
+.real-estate-law{
+   background-image: url('images/real-estate-law-bg.jpg');
+}
+.family-law,.business-law,.criminal-law,.real-estate-law{
+   min-width: 100px;
+   min-height: 100px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+}
+.business-law,.real-estate-law{
+   background-color: rgba(0, 0, 0, 0.5);
+}
+.red-plus-3x{
+   color: red;
+}
+.playButton{
+   position: absolute;
+   top: 1285px;
+   left: 520px;
+   color: red;
+   background-color: transparent;
+   border: none;
+}
+.playButton i{
+   background-color: white;
+   border-radius: 50%;
+}
+.playButton:hover, .playButton:focus {
+   outline: none;
+   }
+.whoWeAre{
+   padding: 5% 15%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.intro,.video{
+   max-width: 45%;
+}
+.intro{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.intro-buttons button
+{
+   background-color: white;
+   border: 1px solid rgb(212, 205, 205);
+   padding: 1% 2%;
+   margin: 2%;
+}
+.intro-buttons .wifi{
+padding-left: 1% !important;
+}
+.intro-buttons button i{
+   color: red;
+}
+.intro-buttons .fa-instagram{
+color: white;
+}
+.insta-red-bg{
+   background-color: red !important;
+}
+.fa-rotate-45 {
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+.into-head{
+   margin-bottom: 20px;
+}
+.video:before {
+   position: absolute;
+   background: rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+ }
