@@ -8,19 +8,21 @@ Now how do you learn React I have a comprehensive tutorial on my channel. you ca
 takes the stability of React seriously so watch this tutorial first but if you want to master react I had a complete course for you that is 12 hours long it goes far beyond my youtube tutorial and touches on concepts such as building complex user interfaces, routing, app navigation, calling back and API's authentication and authorization handling and login errors and deployment are pretty much all the concepts involved in building real applications in this course you will learn how to build a real video rental application with a node back-end this is an online video course just like my youtube tutorial and you can watch it anytime anywhere as many times as you want you will also receive a certificate of completion at the end that you can add to your resume we even offer a 30-day money-back guarantee. If you're interested use the link below this video to get the course for the discount just remember we have a limited number of coupons so enroll before the coupons run out. If you enjoyed this video please support me by liking and sharing this video also subscribe to my channel for more videos like this and let me know in the comments section about your experience with any of these top three frameworks and your goals.
 Thank you and have a fantastic day.
 
+//NEW SCRIPT
+
 Are you looking for the best front-end Js library or framework that you should learn to land a job in 2022? Welcome! You are at the right place. In this video, we are going to focus on a comprehensive comparison of React, Angular, and Vue.
 You might have listened several times that
 React is a library.
 Angular is a framework.
 Vue is a framework.
-But what is the difference between library and frameWork?
+But Do you know, what is the exact difference between library and frameWork?
 Both are collections of functions and reuseable code, but you can call the library functions anywhere, anytime in your code. Your code calls the library.
 While frameWork gives your code a structure or skeleton. You have to follow the instructions and restrictions imposed. The framework calls your code.
 React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.
 Angular is a TypeScript-based free and open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.
 Vue Js is an open-source front-end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, who is an ex-google employee.
 
-These are the most popular frameworks in the world of front end web development. Let's first exploare their usecase.
+These three are the most popular frameworks in the world of front end web development. Let's first explore their usecase.
 Vue is the most easier one to learn and get started.it is the best choice for the novice developers who are not familiar with the advanced concepts of javascript.
 It suits best for the smaller applications.
 React is also easy to learn and get started library but a bit harder than vue. It works with a large number of extra modules and components that makes the core library
@@ -29,9 +31,15 @@ object oriented and functional javascript.
 Angular is a full fledge solution that does not require external dependencies but it has the most steep learning curve and hard to learn for new developers. It is suitable 
 for the developers who have advanced knowledge of javascript and a good knowledge of typescript too.
 
-Let's compare their popularity. React has a huge edge over angular in popularity but in past few years vue has suddenly overtaken react with highest number of stars on 
-its github repositry. Still react react has the highest number of watchers and forks on github.
-Job market and salalry of frameworks varies on the basis of the your location. Accordig to Google trends React have the highest job market in the world and highest salary
-in US with angular following it. Vue has the job opportunities but its immense growth will bring more vast opportunities in future for sure.
+Let's compare their popularity. React used have a huge edge over angular and vue js in popularity but in past few years vue has suddenly overtaken react with highest number of stars on 
+its github repositry. Still react has the highest number of watchers and forks on github. Vue is getting popular day by day but react doesn't seems leaving its place too. 
 
-https://trends.google.com/trends/explore?cat=31&q=Vue%20jobs,React%20jobs,Angular%20jobs
+Job market and salalry of frameworks varies on the basis of the your location. Accordig to Google trends React have the highest job market in the world with angular following it. 
+Vue is the most adolscent one, having the least job opportunities but its immense growth will bring more vast opportunities in future for sure. 
+In Pakistan's job market, react completely owns the stage.There are highest number of job opportunities in React and very few in Vue Js.
+Salaries are largely dependent on the location. In USA react is the highly paid with $94k/per year while in pakistan Angular leads with salary of RS.952k per year.
+
+Moving towards conclusion, No one is superior, choose according to your usecase.
+If you are looking for more job opportunities, go for React.
+If you are going to develop large scale, enterprise ready applications, go for Angular.
+If you are a beginner and don't have enough knowledge of JS go for Vue Js.
