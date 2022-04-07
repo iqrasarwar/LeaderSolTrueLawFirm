@@ -12,14 +12,13 @@ body,html
    max-height: 100vh;
 }
 .head-title{
-   padding: 15%;
+   padding: 0.53%;
    color: white;
 }
 .head-title p{
    letter-spacing: 0.2rem;
 }
 .head-title-heading{
-   max-width: 69%;
    font-weight: 600;
    font-size: 57px;
    line-height: 60px;
@@ -30,11 +29,28 @@ body,html
    border: none;
    padding: 1% 2%;
    margin-top: 3%;
+   max-width: 18%;
+}
+.head-flex{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding-block: 3%;
 }
 .head-foreground-img{
-   position: absolute;
-   top: 27.89%;
-   left: 59%;
+   margin-bottom: -6% !important;
+}
+.head-flex div{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   max-width: 55%;
+}
+.head-flex{
+   padding-left: 12%;
+}
+.head-flex img{
+   padding-right: 12%;
 }
 .navbar{
    width: 100%;
@@ -94,24 +110,24 @@ border-bottom: 4px solid red;
 {
    color: red;
 }
-.card-body{
+.headCards .card-body{
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    text-align: center;
 }
-.card-body p{
+.headCards .card-body p{
    max-width: 80%;
 }
-.card{
+.headCards .card{
    background-color: transparent;
    border: none;
    color: white;
    min-height: 100%;
    min-width: 100%;
 }
-.card-img{
+.headCards .card-img{
    min-height: 250px;
 }
 .family-law{
@@ -146,10 +162,6 @@ border-bottom: 4px solid red;
    color: red;
    background-color: transparent;
    border: none;
-}
-.playButton i{
-   background-color: white;
-   border-radius: 50%;
 }
 .playButton:hover, .playButton:focus {
    outline: none;
@@ -197,12 +209,23 @@ color: white;
 .into-head{
    margin-bottom: 20px;
 }
-.video:before {
+.slick-prev{
    position: absolute;
-   background: rgba(0, 0, 0, 0.5);
-   border-radius: 5px;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
- }
+   left: 96%;
+   top: 43%;
+   z-index: 1;
+}
+.slick-next{
+   left: 2%;
+}
+.slick-next,.slick-prev{
+   position: absolute;
+   bottom: 50%;
+   background-color: transparent;
+   border:none;
+   color: red;
+}
+.slick-prev:focus,.slick-prev:active,
+.slick-next:focus,.slick-next:active{
+   outline: none;
+}
