@@ -8,7 +8,7 @@ body,html
    background-color: rgba(0, 0, 0, 0.8);
    max-height: 100vh;
 }
-.header,.family-law,.business-law,.criminal-law,.real-estate-law,.awards
+.header,.family-law,.business-law,.criminal-law,.real-estate-law,.awards,.attorny_div
 {
    background-repeat: no-repeat;
    background-size: cover;
@@ -285,12 +285,50 @@ text-align: center;
 .attorney{
    display: flex;
    flex-direction: row-reverse;
+   padding-bottom: 4%;
 }
 .attorny_div
 {
    width: 20%;
+   height: 530px;
+   background-size: 100% 100%;
 }
-.attorny_div img{
-   width: 100%;
+.img2{
+   background-image: url('images/manprofile1.png');
+}
+.img5{
+   background-image: url('images/manprofile.jpg');
+}
+.img1{
+   background-image: url('images/womenprofile.png');
+}
+.img3{
+   background-image: url('images/womenprofile1.png');
+}
+.img4{
+   background-image: url('images/womenprofile2.png');
+}
+.attorny_div:hover
+{
+   background-color: rgba(0, 0, 0, 0.8);
+   background-blend-mode: darken;
+}
+.attr_text{
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    height: 100%;
+   text-align: center;
+   display: none;
+}
+.attorny_div:hover .attr_text{
+   display: flex;
+}
+.attorny-buttons i{
+   padding-right: 4%;
+}
+.attorny-buttons{
+   width: 100%;
 }
