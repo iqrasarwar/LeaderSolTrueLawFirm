@@ -229,3 +229,40 @@ color: white;
 .slick-next:focus,.slick-next:active{
    outline: none;
 }
+.practiceArea .card-body, .outPracticeAreas{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.practiceArea .card{
+   border-radius: 0%;
+   margin: 5% 3%;
+   background-color: rgb(245, 246, 247);
+}
+.praciceareaRows{
+   padding: 4% 10%;
+   padding-top: 0%;
+}
+.outPracticeAreas{
+   padding: 4% 10%;
+}
+.areas
+{
+   background-color: rgb(245, 246, 247);
+}
+.practiceArea img{
+   width: 64px;
+   height: 64px;
+}
+.outPracticeAreas p{
+max-width: 63%;
+text-align: center;
+}
+.civilCase{
+   border: none;
+   border-bottom: red 1px solid;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   background-color: rgb(246, 246, 246);
+}
