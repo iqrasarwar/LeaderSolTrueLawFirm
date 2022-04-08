@@ -5,11 +5,14 @@ body,html
 }
 .header{
    background-image: url('images/header-bg.jpg');
+   background-color: rgba(0, 0, 0, 0.8);
+   max-height: 100vh;
+}
+.header,.family-law,.business-law,.criminal-law,.real-estate-law,.awards
+{
    background-repeat: no-repeat;
    background-size: cover;
    background-blend-mode: darken;
-   background-color: rgba(0, 0, 0, 0.8);
-   max-height: 100vh;
 }
 .head-title{
    padding: 0.53%;
@@ -145,9 +148,6 @@ border-bottom: 4px solid red;
 .family-law,.business-law,.criminal-law,.real-estate-law{
    min-width: 100px;
    min-height: 100px;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-blend-mode: darken;
 }
 .business-law,.real-estate-law{
    background-color: rgba(0, 0, 0, 0.5);
@@ -265,4 +265,32 @@ text-align: center;
    border-bottom: red 1px solid;
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
    background-color: rgb(246, 246, 246);
+}
+.awards{
+   background-image: url('images/awards-bg.jpg');
+   background-color: rgba(0, 0, 0, 0.8);
+   display: flex;
+   flex-direction: row;
+   color: white;
+   justify-content: space-around;
+   padding: 5%;
+   font-weight: 500;
+   font-size: 24px;
+   text-align: center;
+}
+.awards-img{
+   width: 64px;
+   height: 64px;
+}
+.attorney{
+   display: flex;
+   flex-direction: row-reverse;
+}
+.attorny_div
+{
+   width: 20%;
+}
+.attorny_div img{
+   width: 100%;
+   height: 100%;
 }
