@@ -22,9 +22,9 @@ body,html
    letter-spacing: 0.2rem;
 }
 .head-title-heading{
-   font-weight: 600;
-   font-size: 57px;
-   line-height: 60px;
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 50px;
 }
 .head-title-button{
    color: white;
@@ -32,16 +32,12 @@ body,html
    border: none;
    padding: 1% 2%;
    margin-top: 3%;
-   max-width: 18%;
+   max-width: 25%;
 }
 .head-flex{
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   padding-block: 3%;
-}
-.head-foreground-img{
-   margin-bottom: -6% !important;
 }
 .head-flex div{
    display: flex;
@@ -54,6 +50,8 @@ body,html
 }
 .head-flex img{
    padding-right: 12%;
+   /* margin-top: -1.3%; */
+   height: 76.2vh !important;
 }
 .navbar{
    width: 100%;
@@ -66,8 +64,8 @@ body,html
    min-width: 100%;
 }
 .nav-bar-logo{
-   width: 128px;
-   height: 128px;
+   width: 115px;
+   height: 115px;
    left: 15%;
    position: absolute;
    top: 0%;
@@ -90,7 +88,8 @@ border-bottom: 4px solid red;
    padding: 0% 15%;
 }
 .nav-item{
-   margin-right: 20px !important;
+   margin-right: 4px !important;
+   font-size: 14px;
 }
 .contact-flex,.contact-sub-flex{
    display: flex;
@@ -107,7 +106,7 @@ border-bottom: 4px solid red;
 }
 .contact-red{
    color: red;
-   padding-right: 15px;
+   padding-right: 8px;
 }
 .fa-twitter
 {
@@ -157,8 +156,8 @@ border-bottom: 4px solid red;
 }
 .playButton{
    position: absolute;
-   top: 1285px;
-   left: 520px;
+   top: 1025px;
+   left: 413px;
    color: red;
    background-color: transparent;
    border: none;
@@ -171,6 +170,8 @@ border-bottom: 4px solid red;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   font-size: 13px;
+   align-items: center;
 }
 .intro,.video{
    max-width: 45%;
@@ -179,6 +180,9 @@ border-bottom: 4px solid red;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+}
+.introText{
+   margin-bottom: 7% ;
 }
 .intro-buttons button
 {
@@ -207,7 +211,7 @@ color: white;
    transform: rotate(45deg);
 }
 .into-head{
-   margin-bottom: 20px;
+   margin-bottom: 5px;
 }
 .slick-prev{
    position: absolute;
@@ -216,7 +220,7 @@ color: white;
    z-index: 1;
 }
 .slick-next{
-   left: 2%;
+   left: 1%;
 }
 .slick-next,.slick-prev{
    position: absolute;
@@ -224,10 +228,20 @@ color: white;
    background-color: transparent;
    border:none;
    color: red;
+   opacity: 0;
+}
+.sliderr:hover .slick-prev,.sliderr:hover .slick-next{
+   opacity: 0.5;
 }
 .slick-prev:focus,.slick-prev:active,
 .slick-next:focus,.slick-next:active{
    outline: none;
+}
+.headCards h2{
+   font-size: 23px;
+}
+.headCards p{
+   font-size: 13px;
 }
 .practiceArea .card-body, .outPracticeAreas{
    display: flex;
@@ -238,15 +252,29 @@ color: white;
 }
 .practiceArea .card{
    border-radius: 0%;
+   min-height: 90%;
    margin: 5% 3%;
    background-color: rgb(245, 246, 247);
+
+}
+.practiceArea h2{
+   font-size: 20px;
+}
+.outPracticeAreas h2{
+   font-weight: 700;
+   font-size: 25px;
+}
+.practiceArea p{
+   margin: 1% !important;
+   font-size: 12px;
 }
 .praciceareaRows{
-   padding: 4% 10%;
+   padding: 11%;
    padding-top: 0%;
 }
 .outPracticeAreas{
-   padding: 4% 10%;
+   padding: 6%;
+   padding-bottom:3%;
 }
 .areas
 {
@@ -255,10 +283,12 @@ color: white;
 .practiceArea img{
    width: 64px;
    height: 64px;
+   margin-bottom: 4%;
 }
 .outPracticeAreas p{
-max-width: 63%;
-text-align: center;
+   max-width: 50%;
+   text-align: center;
+   font-size: 14px;
 }
 .civilCase{
    border: none;
@@ -273,10 +303,18 @@ text-align: center;
    flex-direction: row;
    color: white;
    justify-content: space-around;
-   padding: 5%;
+   padding: 5% 11%;
    font-weight: 500;
-   font-size: 24px;
    text-align: center;
+}
+.stat p{
+   font-size: 15px;
+   margin: 5px;
+}
+.numbers{
+   line-height: 30px;
+   font-size: 39px !important;
+   font-weight: 700 !important;
 }
 .awards-img{
    width: 64px;
@@ -290,7 +328,7 @@ text-align: center;
 .attorny_div
 {
    width: 20%;
-   height: 530px;
+   height: 340px;
    background-size: 100% 100%;
 }
 .img2{
@@ -322,6 +360,15 @@ text-align: center;
    height: 100%;
    text-align: center;
    display: none;
+   border-bottom: 2px solid red;
+}
+.attr_text h2{
+   font-size: 25px;
+   margin-block: 25px;
+}
+.attr_text p{
+   font-size: 12px;
+   margin-bottom: 25px;
 }
 .attorny_div:hover .attr_text{
    display: flex;
