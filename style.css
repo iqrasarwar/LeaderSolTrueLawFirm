@@ -8,7 +8,7 @@ body,html
    background-color: rgba(0, 0, 0, 0.8);
    max-height: 100vh;
 }
-.header,.family-law,.business-law,.criminal-law,.real-estate-law,.awards,.attorny_div
+.header,.family-law,.business-law,.criminal-law,.real-estate-law,.awards,.attorny_div,.testimoninals_div
 {
    background-repeat: no-repeat;
    background-size: cover;
@@ -385,13 +385,10 @@ color: white;
    flex-direction: column;
 }
 .consult_form{
-   max-width: 40%;
+   min-width: 33%;
    padding: 1% 3%;
-   border: 1px solid red;
-}
-.formImg{
-   width: 35%;
-   margin-left: 5%;
+   text-align: center;
+   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .formImg img{
    width: 100%;
@@ -406,6 +403,12 @@ color: white;
    margin-block: 1%;
    padding: 3%;
    width: 100%;
+   border: 1px solid gainsboro;
+}
+.inputs:focus,.inputs:active
+{
+   outline: 1px inset red;
+   border: none;
 }
 .send-btn{
    color: white;
@@ -414,7 +417,42 @@ color: white;
    padding: 3%;
    margin-block: 7%;
 }
-form h1{
-   width: 70%;
+.formSection h2{
+   font-size: 20px;
    padding-block:5%;
+}
+.formImg{
+   width: 35%;
+}
+.formImg img{
+   min-height: 100%;
+   width: 100%;
+   margin-left: 5%;
+}
+.testimonial{
+   display: flex !important;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.testimonial p{
+   max-width: 45%;
+   font-size: 15px;
+}
+.testimoninals_div{
+   text-align: center;
+   background-image: url('images/attest-bg.jpg');
+   background-color: rgba(0, 0, 0, 0.8);
+   color: white;
+   padding: 4%;
+}
+.testimoninals_div h2{
+   font-size: 33px;
+   margin-block: 2.5%;
+}
+.testimoninals_div h3{
+   font-size: 20px;
+}
+.testimoninals_div{
+   margin-top: 7%;
 }
