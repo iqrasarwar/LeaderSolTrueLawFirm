@@ -8,7 +8,7 @@ body,html
    background-color: rgba(0, 0, 0, 0.8);
    max-height: 100vh;
 }
-.header,.family-law,.business-law,.criminal-law,.real-estate-law,.awards,.attorny_div,.testimoninals_div
+.header,.family-law,.business-law,.criminal-law,.real-estate-law,.awards,.attorny_div,.testimoninals_div,.news_div .card-img-top
 {
    background-repeat: no-repeat;
    background-size: cover;
@@ -455,4 +455,44 @@ color: white;
 }
 .testimoninals_div{
    margin-top: 7%;
+}
+.news_div{
+  background-color: white !important;
+  text-align: center;
+  padding: 0% 6%;
+}
+.news_div .card h2{
+   font-size: 15px;
+}
+.news_date {
+   color: rgb(197, 190, 190);
+}
+.news_date .fa-clock-o{
+   margin-right: 5px;
+   font-size: 15px;
+}
+.news_div .card-body{
+padding: 2%;
+}
+.news_div .card{
+   margin-right: 9%;
+   border: 1px solid rgb(224, 223, 223);
+   border-radius: 0;
+
+}
+.news_div .card-img-top{
+   border-radius: 0;
+  background-image: url('images/attest-bg.jpg');
+min-height: 120px;
+background-color: rgba(0, 0, 0, 0.8);
+}
+.img-text{
+   position: absolute;
+   top: 20%;
+   left: 45%;
+}
+.card-centeral{
+   border:  none !important;
+   border-bottom: 2px solid red !important;
+   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
