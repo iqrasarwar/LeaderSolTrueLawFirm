@@ -213,28 +213,25 @@ color: white;
 .into-head{
    margin-bottom: 5px;
 }
-.slick-prev{
+.slick-next,.slick-prev{
    position: absolute;
-   left: 96%;
-   top: 43%;
-   z-index: 1;
+   background-color: transparent;
+   border:none;
+   min-width: 100px;
+   color: red;
 }
 .slick-next{
    left: 1%;
+   bottom: 47%;
 }
-.slick-next,.slick-prev{
-   position: absolute;
-   bottom: 50%;
-   background-color: transparent;
-   border:none;
-   color: red;
-   opacity: 0;
+.slick-prev{
+   left: 90%;
+   top: 2%;
+   z-index: 1;
 }
-.sliderr:hover .slick-prev,.sliderr:hover .slick-next{
-   opacity: 0.5;
-}
-.slick-prev:focus,.slick-prev:active,
-.slick-next:focus,.slick-next:active{
+.slick-next:focus,.slick-next:active,
+.slick-prev:focus,.slick-next:active
+{
    outline: none;
 }
 .headCards h2{
