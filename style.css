@@ -611,3 +611,80 @@ column-gap: 10px;
    flex-direction: column;
    align-items: center;
 }
+
+/* RESPONSIVE NESS CORRECTION */
+.navbar-toggler:active,.navbar-toggler:focus{
+   outline: red !important;
+}
+.navbar-toggler-icon{
+   color: red !important;
+}
+@media (max-width:1000px ) {
+.nav-bar-logo{
+  height: 40px;
+  width: 50px;
+  left: 20%;
+}
+.navbar-toggler{
+   border-color: red !important;
+   color: red !important;
+   margin-top: 0%;
+   margin-left:75%;
+}
+.navbar-light  .navbar-toggler-icon{
+   background-image: url('images/logo-lines.png')
+}
+.nav-item{
+   margin-right: 20px !important;
+}
+.header{
+     max-height: 148.6vh;
+}
+.head-title-heading{
+font-weight: 500;
+font-size: 25px;
+line-height: 29px;
+}
+.contact-red{
+   padding-right: 2px;
+}
+.head-title p{
+   font-size: 13px;
+letter-spacing: 0.1rem;
+}
+.head-title{
+   padding: 0%;
+}
+.head-title-button{
+   font-size: xx-small;
+   padding: 1%;
+   max-width: 20%;
+}
+.headCards .card{
+   min-height: 200px;
+}
+.whoWeAre{
+   flex-direction: column-reverse;
+   padding: 5%;
+}
+.playButton{
+   top: 233%;
+   left: 50%;
+}
+#video1
+{
+   width: 420px !important;
+}
+}
+@media (max-width:768px) {
+   .header{
+      max-height: 150vh;
+   }
+   .headCards .card{
+      min-height: 100px;
+   }
+   .playButton{
+      top: 252%;
+      left: 53%;
+   }
+}
