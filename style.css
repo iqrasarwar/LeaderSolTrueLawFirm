@@ -788,3 +788,34 @@ letter-spacing: 0.1rem;
       padding-top: 3%;
    }
 }
+@media(max-width:360px)
+{
+   .head-flex{
+      flex-direction: column !important;
+   }
+   .head-flex div{
+      margin-block: 10% !important;
+   }
+   .head-title-button{
+      min-width: 50%;
+   }
+   .head-title-heading
+   {
+      font-size: 20px;
+   }
+   .headCards .card{
+      min-height: 200px;
+   }
+   .playButton{
+      top: 320%;
+      left: 50%;
+   }
+   #video1
+   {
+      width: 120px !important;
+      height: 100px !important;
+   }
+   .video{
+   left:  0% !important;
+   }
+}
