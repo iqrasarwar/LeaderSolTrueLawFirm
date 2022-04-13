@@ -619,24 +619,12 @@ column-gap: 10px;
 .navbar-toggler-icon{
    color: red !important;
 }
-
-@media (min-width:1024px ){
-   .nav-bar-logo {
-      height: 50px !important;
-      width: 37px;
-      left: 19.9% !important;
-  }
-  .playButton{
-     top: 182% !important;
-     left: 49% !important;
-  }
-}
 @media (max-width:1024px ) {
-.nav-bar-logo{
-  height: 40px;
-  width: 50px;
-  left: 20%;
-}
+   .nav-bar-logo{
+      height: 50px;
+      width: 50px;
+      left: 20%;
+    }
 .navbar-toggler{
    border-color: red !important;
    color: red !important;
@@ -670,7 +658,7 @@ letter-spacing: 0.1rem;
 .head-title-button{
    font-size: xx-small;
    padding: 1%;
-   max-width: 27%;
+   max-width: 20%;
 }
 .headCards .card{
    min-height: 200px;
@@ -776,7 +764,7 @@ letter-spacing: 0.1rem;
 }
 }
 @media (max-width:768px) {
-   .headCards .card{
+      .headCards .card{
       min-height: 200px !important;
    }
    .header{
@@ -826,6 +814,7 @@ letter-spacing: 0.1rem;
       left: 43%;
       width: 20px !important;
       height: 20px !important;
+
    }
    #video1
    {
@@ -850,6 +839,31 @@ letter-spacing: 0.1rem;
    .foot-flex i{
       padding-top: 5%;
    }
+}
+@media (min-width:1024px ) and (max-width:1440px){
+   .playButton{
+      top: 152% !important;
+      left: 32% !important;
+   }
+}
+@media (width:1024px) {
+   .playButton{
+      top: 183% !important;
+      left: 49% !important;
+   }
+
+}
+@media (min-width:1440px ) and (max-width:2560px){
+   .playButton{
+      top: 154% !important;
+      left: 23% !important;
+   }
+}
+@media (min-width:1024px ){
+  .playButton{
+     top: 182% !important;
+     left: 49% !important;
+  }
 }
 @media(max-width:375px) and (min-width:321px)
 {
@@ -887,24 +901,5 @@ letter-spacing: 0.1rem;
    #video1
    {
       width: 210px !important;
-   }
-}
-@media (min-width:1024px ) and (max-width:1440px){
-   .playButton{
-      top: 152% !important;
-      left: 32% !important;
-   }
-}
-@media (width:1024px) {
-   .playButton{
-      top: 183% !important;
-      left: 49% !important;
-   }
-
-}
-@media (min-width:1440px ) and (max-width:2560px){
-   .playButton{
-      top: 154% !important;
-      left: 23% !important;
    }
 }
