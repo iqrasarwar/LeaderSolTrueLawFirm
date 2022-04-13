@@ -895,6 +895,13 @@ letter-spacing: 0.1rem;
       left: 32% !important;
    }
 }
+@media (width:1024px) {
+   .playButton{
+      top: 183% !important;
+      left: 49% !important;
+   }
+
+}
 @media (min-width:1440px ) and (max-width:2560px){
    .playButton{
       top: 154% !important;
