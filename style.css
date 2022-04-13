@@ -808,6 +808,10 @@ letter-spacing: 0.1rem;
    .headCards .card{
       min-height: 200px;
    }
+   #playVid {
+      top:25%;
+      left:25%;
+  }
    #video1
    {
       width: 120px !important;
