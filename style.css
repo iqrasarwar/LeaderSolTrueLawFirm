@@ -619,7 +619,19 @@ column-gap: 10px;
 .navbar-toggler-icon{
    color: red !important;
 }
-@media (max-width:1000px ) {
+
+@media (min-width:1024px ){
+   .nav-bar-logo {
+      height: 50px !important;
+      width: 37px;
+      left: 19.9% !important;
+  }
+  .playButton{
+     top: 182% !important;
+     left: 49% !important;
+  }
+}
+@media (max-width:1024px ) {
 .nav-bar-logo{
   height: 40px;
   width: 50px;
@@ -658,7 +670,7 @@ letter-spacing: 0.1rem;
 .head-title-button{
    font-size: xx-small;
    padding: 1%;
-   max-width: 20%;
+   max-width: 27%;
 }
 .headCards .card{
    min-height: 200px;
@@ -764,6 +776,9 @@ letter-spacing: 0.1rem;
 }
 }
 @media (max-width:768px) {
+   .headCards .card{
+      min-height: 200px !important;
+   }
    .header{
       max-height: 150vh;
    }
@@ -771,8 +786,8 @@ letter-spacing: 0.1rem;
       min-height: 100px;
    }
    .playButton{
-      top: 252%;
-      left: 53%;
+      top: 200%;
+      left: 50%;
    }
    .stat{
       padding-block: 6%;
@@ -788,7 +803,7 @@ letter-spacing: 0.1rem;
       padding-top: 3%;
    }
 }
-@media(max-width:360px)
+@media(max-width:375px)
 {
    .head-flex{
       flex-direction: column !important;
@@ -811,7 +826,6 @@ letter-spacing: 0.1rem;
       left: 43%;
       width: 20px !important;
       height: 20px !important;
-
    }
    #video1
    {
@@ -835,5 +849,55 @@ letter-spacing: 0.1rem;
    }
    .foot-flex i{
       padding-top: 5%;
+   }
+}
+@media(max-width:375px) and (min-width:321px)
+{
+   .playButton{
+      top: 305%;
+   }
+}
+@media(max-width:426px) and (min-width:376px)
+{
+   .head-flex{
+      flex-direction: column !important;
+   }
+   .head-flex div{
+      margin-block: 10% !important;
+   }
+   .head-title-button{
+      min-width: 50%;
+   }
+   .head-title-heading
+   {
+      font-size: 20px;
+   }
+   .headCards .card{
+      min-height: 200px;
+   }
+   .slick-prev
+   {
+      left: 70% !important;
+      top: 30% !important;
+   }
+   .playButton{
+      top: 300% !important;
+      left: 46%;
+   }
+   #video1
+   {
+      width: 210px !important;
+   }
+}
+@media (min-width:1024px ) and (max-width:1440px){
+   .playButton{
+      top: 152% !important;
+      left: 32% !important;
+   }
+}
+@media (min-width:1440px ) and (max-width:2560px){
+   .playButton{
+      top: 154% !important;
+      left: 23% !important;
    }
 }
