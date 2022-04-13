@@ -807,8 +807,11 @@ letter-spacing: 0.1rem;
       min-height: 200px;
    }
    .playButton{
-      top: 320%;
-      left: 50%;
+      top: 313%;
+      left: 43%;
+      width: 20px !important;
+      height: 20px !important;
+
    }
    #video1
    {
@@ -817,5 +820,20 @@ letter-spacing: 0.1rem;
    }
    .video{
    left:  0% !important;
+   }
+   .intro-buttons{
+      display: flex;
+      flex-direction: column;
+   }
+   .slick-prev
+   {
+      left: 70% !important;
+      top: 35% !important;
+   }
+   .news-signup input{
+      width: 60%;
+   }
+   .foot-flex i{
+      padding-top: 5%;
    }
 }
