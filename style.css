@@ -109,7 +109,7 @@ border-bottom: 4px solid red;
    color: red;
    padding-right: 8px;
 }
-.fa-twitter
+.nav-item i:hover
 {
    color: red;
 }
@@ -189,16 +189,23 @@ border-bottom: 4px solid red;
    padding: 1% 2%;
    margin: 2%;
 }
+.fixed-top {
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.8);
+}
 .intro-buttons .wifi{
 padding-left: 1% !important;
 }
 .intro-buttons button i{
    color: red;
 }
-.intro-buttons .fa-instagram{
+.intro-buttons button:hover i{
 color: white;
 }
-.insta-red-bg{
+.intro-buttons button:hover{
    background-color: red !important;
 }
 .fa-rotate-45 {
@@ -626,6 +633,13 @@ column-gap: 10px;
     top:45%;
     left:45%;
     z-index:1;
+}
+#panim
+{
+   animation-duration: 2s;
+}
+#panimRright{
+   animation-duration: 2s;
 }
 /* RESPONSIVE NESS CORRECTION */
 .navbar-toggler:active,.navbar-toggler:focus{

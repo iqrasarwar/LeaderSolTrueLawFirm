@@ -45,7 +45,7 @@
                   <a class="nav-item nav-link" href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                </div>
             </div>
-           <div class="navbar-nav navbar-menu">
+           <div class="navbar-nav navbar-menu" id="nav-tab">
              <a class="nav-item nav-link active" href="#" id="nav-active-tab">HOME<span class="sr-only">(current)</span></a>
              <a class="nav-item nav-link" href="#about">ABOUT US</a>
              <a class="nav-item nav-link" href="#areas">PRACTICE AREA</a>
@@ -456,6 +456,17 @@
     <script>
       var array = ['panim','panimRright'];
       function scrolListener(e){
+        var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+        if(scrollTop > 100)
+        {
+          var navv = document.getElementById('nav-tab')
+          navv.classList.add("fixed-top");
+        }
+        else
+        {
+          var navv = document.getElementById('nav-tab')
+          navv.classList.remove('fixed-top');
+        }
         for (let index = 0; index < array.length; index++) {
           const element = document.getElementById(array[index]);
           var textTop = element.getBoundingClientRect().top
