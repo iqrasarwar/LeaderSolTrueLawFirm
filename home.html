@@ -16,6 +16,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
 	   crossorigin="anonymous" />
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
    <link rel="stylesheet" href="style.css">
     <title>True Finance Firm</title>
   </head>
@@ -67,7 +71,7 @@
           <div class="head-flex">
             <div class="head-text">
               <p>YOUR LEGAL SOLUTION START HERE</p>
-            <h1 class="head-title-heading">THE GREATEST & STRONGEST FIRM YOU CAN TRUST</h1>
+            <h1 class="head-title-heading ">THE GREATEST & STRONGEST FIRM YOU CAN TRUST</h1>
             <button class="head-title-button">LEARN MORE</button>
             </div>
            <img src="images/head-forground.png" alt="" class="head-foreground-img">
@@ -108,7 +112,7 @@
     </div>
     </div>
     <div class="whoWeAre" id="about">
-      <div class="video">
+      <div class="video" id="videoAnim">
         <!-- playButton -->
         <video id="video1" poster="images/video-thumbnail.png" width="470px" height="380px">
           <source src="images/workVideo.mp4" type="video/mp4">
@@ -143,11 +147,11 @@
       </div>
     </div>
     <div class="areas" id="areas">
-      <div class="outPracticeAreas">
+      <div class="outPracticeAreas" id="panimRright">
         <h2>OUR PRACTICE AREAS</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequatur laborum autem quo, similique dolores corporis ratione vel.</p>
       </div>
-      <div class="praciceareaRows">
+      <div class="praciceareaRows"  id="panim">
         <div class="row no-gutters practiceArea">
           <div class="col-sm-12 col-md-12 col-lg-4">
             <div class="card">
@@ -231,7 +235,7 @@
       </div>
     </div>
     <div class="attr_imgs" id="ättorney">
-      <div class="outPracticeAreas">
+      <div class="outPracticeAreas" id="ppanim">
         <h2>OUR ATTORNEY</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequatur beatae est laborum autem quo, blanditiis minima. Rem.</p>
       </div>
@@ -294,7 +298,7 @@
       </div>
     </div>
     <div class="formSection">
-      <div class="consult_form">
+      <div class="consult_form" id="formAnim">
         <h2>GET FREE CONSULTATION</h2>
         <form action="">
           <input type="text" name="name" class="inputs" placeholder="Name">
@@ -336,7 +340,7 @@
         <h2>OUR LATEST NEWS</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequatur laborum autem quo, similique dolores corporis ratione vel.</p>
       </div>
-      <div class="praciceareaRows">
+      <div class="praciceareaRows" id="nanim">
         <div class="row no-gutters">
           <div class="col-sm-12 col-md-12 col-lg-4">
             <div class="card">
@@ -450,6 +454,32 @@
       Copyright &copy; 2017 TRUE. All Rights Reserved.
     </div>
     <script>
+      var array = ['panim','panimRright'];
+      function scrolListener(e){
+        for (let index = 0; index < array.length; index++) {
+          const element = document.getElementById(array[index]);
+          var textTop = element.getBoundingClientRect().top
+        var screenTop = document.scrollingElement.scrollTop;
+        var screenBottom = screenTop + innerHeight;
+        element.classList.add("animate__animated");
+          if ( textTop < screenBottom && textTop < (screenTop + 150))
+          {
+            if(array[index]  != 'panim')
+            {
+              element.classList.add("animate__backInRight");
+            }
+          }
+          if(textTop < screenBottom && textTop < (screenTop))
+          {
+            if(array[index]  == 'panim')
+            {
+              element.classList.add("animate__backInLeft");
+              element.classList.add("animate__delay-1s");
+            }
+          }
+        }
+      }
+      document.onscroll = scrolListener
       function animateValue(obj, start, end, duration) {
         let startTimestamp = null;
         const step = (timestamp) => {

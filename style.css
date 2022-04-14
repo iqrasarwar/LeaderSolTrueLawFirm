@@ -483,22 +483,21 @@ min-height: 120px;
 .news_div .card-img-top i{
    display: none;
 }
-.news_div .card-img-top:hover i{
+.news_div .card:hover .card-img-top i{
    display: flex;
 }
-.news_div .card-img-top:hover{
-
+.news_div .card:hover .card-img-top{
+   border:  none !important;
+   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
    background-color: rgba(0, 0, 0, 0.8);
+}
+.news_div .card:hover{
+border-bottom: 2px solid red;
 }
 .img-text{
    position: absolute;
    top: 20%;
    left: 45%;
-}
-.card-centeral{
-   border:  none !important;
-   border-bottom: 2px solid red !important;
-   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .news-signup{
    justify-content: space-around;
