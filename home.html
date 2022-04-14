@@ -43,11 +43,11 @@
             </div>
            <div class="navbar-nav navbar-menu">
              <a class="nav-item nav-link active" href="#" id="nav-active-tab">HOME<span class="sr-only">(current)</span></a>
-             <a class="nav-item nav-link" href="#">ABOUT US</a>
-             <a class="nav-item nav-link" href="#">PRACTICE AREA</a>
+             <a class="nav-item nav-link" href="#about">ABOUT US</a>
+             <a class="nav-item nav-link" href="#areas">PRACTICE AREA</a>
              <a class="nav-item nav-link" href="#">SERVICE</a>
-             <a class="nav-item nav-link" href="#">ATORNEY</a>
-             <a class="nav-item nav-link" href="#">BLOG</a>
+             <a class="nav-item nav-link" href="#ättorney">ATORNEY</a>
+             <a class="nav-item nav-link" href="#blog">BLOG</a>
              <a class="nav-item nav-link" href="#">CONTENT</a>
            </div>
          </div>
@@ -107,7 +107,7 @@
       </div>
     </div>
     </div>
-    <div class="whoWeAre">
+    <div class="whoWeAre" id="about">
       <div class="video">
         <!-- playButton -->
         <video id="video1" poster="images/video-thumbnail.png" width="470px" height="380px">
@@ -142,7 +142,7 @@
         </div>
       </div>
     </div>
-    <div class="areas">
+    <div class="areas" id="areas">
       <div class="outPracticeAreas">
         <h2>OUR PRACTICE AREAS</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequatur laborum autem quo, similique dolores corporis ratione vel.</p>
@@ -212,25 +212,25 @@
       <div class="stat">
         <img src="images/icons8-users-64.png" class="awards-img">
         <p>QUALIFIED LAWERS</p>
-        <p  class="numbers">100+</p>
+        <p  class="numbers"><span id="num1">100</span>+</p>
       </div>
       <div class="stat">
         <img src="images/icons8-awards-64.png" class="awards-img">
         <p>HONORS & AWARDS</p>
-        <p class="numbers">110+</p>
+        <p class="numbers"><span  id="num2">110</span>+</p>
       </div>
       <div class="stat">
         <img src="images/icons8-check-circle-64.png" class="awards-img">
         <p>SUCCESSFUL CASES</p>
-        <p  class="numbers" >500+</p>
+        <p class="numbers"><span id="num3">500</span>+</p>
       </div>
       <div class="stat">
         <img src="images/trustedlients-removebg-preview.png" class="awards-img">
         <p>TRUSTED CLIENTS</p>
-        <p  class="numbers">350+</p>
+        <p class="numbers"><span id="num4">350</span>+</p>
       </div>
     </div>
-    <div class="attr_imgs">
+    <div class="attr_imgs" id="ättorney">
       <div class="outPracticeAreas">
         <h2>OUR ATTORNEY</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequatur beatae est laborum autem quo, blanditiis minima. Rem.</p>
@@ -331,7 +331,7 @@
         </div>
       </div>
     </div>
-    <div class="areas news_div">
+    <div class="areas news_div" id="blog">
       <div class="outPracticeAreas">
         <h2>OUR LATEST NEWS</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequatur laborum autem quo, similique dolores corporis ratione vel.</p>
@@ -340,7 +340,9 @@
         <div class="row no-gutters">
           <div class="col-sm-12 col-md-12 col-lg-4">
             <div class="card">
-              <img class="card-img-top" src="images/attest-bg.jpg" alt="Card image cap">
+              <div class="imgCon card-img-top">
+                <i class="fa fa-2x fa-plus-circle red-plus-3x img-text" aria-hidden="true"></i>
+              </div>
               <div class="card-body">
                 <p class="news_date"><i class="fa fa-clock-o" aria-hidden="true"></i>Augest 15,2017</p>
                 <h2>BLOG POST DUMMY TITLE</h2>
@@ -360,7 +362,9 @@
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4">
             <div class="card">
-              <img class="card-img-top" src="images/attest-bg.jpg" alt="Card image cap">
+              <div class="imgCon card-img-top">
+                <i class="fa fa-2x fa-plus-circle red-plus-3x img-text" aria-hidden="true"></i>
+              </div>
               <div class="card-body">
                 <p class="news_date"><i class="fa fa-clock-o" aria-hidden="true"></i>Augest 15,2017</p>
                 <h2>BLOG POST DUMMY TITLE</h2>
@@ -446,6 +450,30 @@
       Copyright &copy; 2017 TRUE. All Rights Reserved.
     </div>
     <script>
+      function animateValue(obj, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          obj.innerHTML = Math.floor(progress * (end - start) + start);
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          }
+        };
+        window.requestAnimationFrame(step);
+      }
+
+      var obj = document.getElementById("num1");
+      var obj1 = document.getElementById("num2");
+      var obj2= document.getElementById("num3");
+      var obj3 = document.getElementById("num4");
+      console.log(obj1.innerHTML);
+
+      animateValue(obj, 0, obj.innerHTML, 3000);
+      animateValue(obj1, 0, obj1.innerHTML, 3000);
+      animateValue(obj2, 0, obj2.innerHTML, 3000);
+      animateValue(obj3, 0, obj3.innerHTML, 3000);
+
         var myVideo = document.getElementById("video1");
         var playbtn = document.getElementById("playVid");
         document.getElementById("video1").poster.style.minWidth = "100%";

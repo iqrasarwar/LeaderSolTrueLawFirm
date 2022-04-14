@@ -285,9 +285,9 @@ color: white;
    text-align: center;
    font-size: 14px;
 }
-.civilCase{
+.practiceArea .card:hover{
    border: none;
-   border-bottom: red 1px solid;
+   border-bottom: red 2px solid;
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
    background-color: rgb(246, 246, 246);
 }
@@ -479,7 +479,16 @@ padding: 4%;
    border-radius: 0;
   background-image: url('images/attest-bg.jpg');
 min-height: 120px;
-background-color: rgba(0, 0, 0, 0.8);
+}
+.news_div .card-img-top i{
+   display: none;
+}
+.news_div .card-img-top:hover i{
+   display: flex;
+}
+.news_div .card-img-top:hover{
+
+   background-color: rgba(0, 0, 0, 0.8);
 }
 .img-text{
    position: absolute;
