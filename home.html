@@ -473,18 +473,18 @@
         var screenTop = document.scrollingElement.scrollTop;
         var screenBottom = screenTop + innerHeight;
         element.classList.add("animate__animated");
-          if ( textTop < screenBottom && textTop < (screenTop + 150))
+          if ( textTop < screenBottom && textTop < (screenTop))
           {
             if(array[index]  != 'panim')
             {
-              element.classList.add("animate__backInRight");
+              element.classList.add("animate__bounceInRight");
             }
           }
           if(textTop < screenBottom && textTop < (screenTop))
           {
             if(array[index]  == 'panim')
             {
-              element.classList.add("animate__backInLeft");
+              element.classList.add("animate__bounceInLeft");
               element.classList.add("animate__delay-1s");
             }
           }
